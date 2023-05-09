@@ -25,11 +25,12 @@ Likes int,
 ReviewID int,
 userid int
 );
+insert into Games (title, genre, publisher, developer, release_date, rating) Values  ('Mortal Kombat', 'Fighting', 'NetherRelm Studios', 'Ed Boon', '1992-08-10', '10/10');  	
+
+select release_date from Games; 
 
 
 
-
-
-
+drop database gamelibrary;
 
 
