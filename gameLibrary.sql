@@ -29,9 +29,8 @@ insert into Games (title, genre, publisher, developer, release_date, rating) Val
 
 select release_date from Games; 
 select title from games; 
+select publisher from games;
 
 
-
-drop database gamelibrary;
 
 
