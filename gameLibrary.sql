@@ -10,26 +10,27 @@ primary key(userid)
 );
 
 create table Games(
-title varchar(255),
+Title varchar(255),
 genre varchar(255),
 publisher varchar(255),
 developer varchar(255),
-release_date date,
-rating int
+release_date date
 );
 
 create table Reviews(
-title varchar(255),
+Title varchar(255),
 Body varchar(255),
 Likes int,
 ReviewID int,
 userid int
 );
-insert into Games (title, genre, publisher, developer, release_date, rating) Values  ('Mortal Kombat', 'Fighting', 'NetherRelm Studios', 'Ed Boon', '1992-08-10', '10/10');  	
+insert into Games (title, genre, publisher, developer, release_date) Values  ('Mortal Kombat', 'Fighting', 'NetherRelm Studios', 'Ed Boon', '1992-08-10');  	
 
-select release_date from Games; 
-select title from games; 
-select publisher from games;
+
+select title, body from Reviews; 
+
+
+
 
 
 
