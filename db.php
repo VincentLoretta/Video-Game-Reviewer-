@@ -33,24 +33,33 @@ if($_SERVER["REQUEST_METHOD"] !== "POST"){
   $Rev = $_POST['Rev'];
   $Rating = $_POST['Rating'];
 
+
+
 $sql = "INSERT INTO `Reviews` (`Title`, `Body`, `Likes`) VALUES ('$Title', '$Rev', 0)";
 
 $rs = mysqli_query($con, $sql);
 
 if($rs)
 {
-  echo "Contact Records Inserted";
+  echo "Thank you for your review of " . $Title .", Check out some other reviews";
 }
 
-
-
-
   
- 
+  
 
 ?>
 
+<!DOCTYPE html>
+<style>
+  body{
+    background-color: lightblue;
+  }
+</style>
 
+<a href="http://localhost/myrepositories/Video-Game-Reviewer-/Reviews.php">Check Out Our Other Reviews </a><br><br><br>
+
+
+</HMTL>
 
 
 

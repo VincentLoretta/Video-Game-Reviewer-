@@ -27,10 +27,10 @@ userid int
 insert into Games (title, genre, publisher, developer, release_date) Values  ('Mortal Kombat', 'Fighting', 'NetherRelm Studios', 'Ed Boon', '1992-08-10');  	
 
 
-select title, body from Reviews; 
+select  Body from Reviews; 
 
 
-
+DELETE Body FROM Reviews;
 
 
 
