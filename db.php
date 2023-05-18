@@ -31,11 +31,12 @@ if($_SERVER["REQUEST_METHOD"] !== "POST"){
 
   $Title = $_POST['Title'];
   $Rev = $_POST['Rev'];
-  $Rating = $_POST['Rating'];
+  $Likes = $_POST['Likes'];
 
 
 
-$sql = "INSERT INTO `Reviews` (`Title`, `Body`, `Likes`) VALUES ('$Title', '$Rev', 0)";
+
+$sql = "INSERT INTO `Reviews` (`Title`, `Body`,`Likes`) VALUES ('$Title', '$Rev', '$Likes')";
 
 $rs = mysqli_query($con, $sql);
 
