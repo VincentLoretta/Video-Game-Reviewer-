@@ -9,18 +9,6 @@ if($_SERVER["REQUEST_METHOD"] !== "POST"){
     exit(); //terminate the program
   }
 
-  
-
-
-
-
-
-
-
-
-
-
-
   $servername = "localhost";
   $username = "root";
   $password = "";
@@ -43,6 +31,11 @@ $rs = mysqli_query($con, $sql);
 if($rs)
 {
   echo "Thank you for your review of " . $Title .", Check out some other reviews";
+}
+elSE {
+
+  ECHO "OOPS SOMETHING FUCKED UP ";
+  // code...
 }
 
   
