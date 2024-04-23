@@ -19,14 +19,13 @@ release_date date
 
 create table Reviews(
 Title varchar(255),
-Body varchar(255),
+Review varchar(255),
 Likes varchar(255),
 ReviewID int,
 userid int
 );
 
-insert into Games (title, genre, publisher, developer, release_date) Values  ('Mortal Kombat', 'Fighting', 'NetherRelm Studios', 'Ed Boon', '1992-08-10');  	
+select Title, Review, likes from Reviews; 
 
-select Title, body, likes from Reviews; 
-
+select email from User;
 
