@@ -1,69 +1,49 @@
- <!DOCTYPE html>
- <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-    <head>
-      <meta charset="UTF-8">
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Video Game Reviewer</title>
-    <link rel="stylesheet" href="styles.css">   
-
-    </head> 
-
+    <link rel="stylesheet" href="styles.css">
     <style>
+        body {
+            background-color: lightpink;
+            position: relative; /* Ensure absolute positioning works */
+        }
 
-      body{
-        background-color: lightpink;
-      }
-
-
-      
-
-
+        .login-signup-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
     </style>
-    <body>
+</head>
 
-    <h1 style="color:blue;">Welcome to the Video Game Reviewerz<br><br> </h1>
-
-
+<body>
+    <h1 style="color:blue;">Welcome to the Video Game Reviewer<br><br> </h1>
     <a href="http://localhost/myrepositories/Video-Game-Reviewer-/Reviews.php">Check Out Our Other Reviews </a><br><br><br>
 
+    <form action="db.php" method="post" rel ="stylesheet" href= "form_style.html">
+        <label for='Title'>Please Enter the Title of the Game You'd Like to Review</label><br>
+        <input type='text' id='Title' name='Title'> </input><br><br><br>
+        <label for='Rev'>Leave your Review</label><br>
+        <input type='text' id='Rev' name='Rev'></input><br><br><br>
+        <label for='Likes'>Please Enter Your Rating Out of 10</label><br>
+        <input type='number' min="0" max="10" id='Likes' name='Likes'></input><br><br><br>
 
-
-
-
-
-
-
-
-    <form action="db.php" method="post">
-    <label for='Title'>Please Enter the Title of the Game You'd Like to Review</label><br>
-    <input type='text' id='Title' name='Title'> </input><br><br><br>
-    <label for='Rev'>Leave your Review</label><br>
-    <input type='text' id='Rev' name='Rev'</input><br><br><br>
-    <label for ='Likes'>Please Enter Your Rating Out of 10</label><br>
-    <input type ='number' min="0" max="10" id = 'Likes' name='Likes'></input><br><br><br>
-   
-
-
-
-    <input type="submit" value="Submit">
+        <input type="submit" value="Submit">
     </form>
 
-   
+    <!-- Login or Sign up button -->
+    <a href="http://localhost/myrepositories/Video-Game-Reviewer-/Login.html"><button class="login-signup-button">Login or Sign up</button>
 
+</body>
 
-
-  
-
-
-
-
-
-
-
-
-
-    </body>
-    </html>
-    
+</html>

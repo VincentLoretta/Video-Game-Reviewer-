@@ -55,7 +55,7 @@ if($_SERVER["REQUEST_METHOD"] !== "POST"){
 // Function to check if email already exists in the database
 function isEmailUnique($email) {
     // Perform a database query to check if the email exists
-    // Example: SELECT COUNT(*) FROM users WHERE email = '$email'
+    // Example: SELECT COUNT(*) FROM User WHERE email = '$email'
     // Execute the query and return true if no rows are found, false otherwise
 }
 
@@ -66,14 +66,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Check if email is unique
     if (isEmailUnique($email)) {
         // Proceed with user registration
-        // Example: INSERT INTO users (email, username, password) VALUES ('$email', '$username', '$password')
+        // Example: INSERT INTO User (email, username, password) VALUES ('$email', '$username', '$password')
         echo "Account created successfully!";
     } else {
         echo "This email is already in use. Please use a different email.";
     }
 }
 
-$sql = "INSERT INTO `Users` (`username`, `email`,`new_password`) VALUES ('$Username', '$Email', '$new_password')";
+$sql = "INSERT INTO `User` (`username`, `email`,`password`) VALUES ('$Username', '$Email', '$pword')";
 
 
 
