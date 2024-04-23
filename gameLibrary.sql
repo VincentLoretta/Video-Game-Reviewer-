@@ -24,6 +24,7 @@ Likes varchar(255),
 ReviewID int,
 userid int
 );
+
 insert into Games (title, genre, publisher, developer, release_date) Values  ('Mortal Kombat', 'Fighting', 'NetherRelm Studios', 'Ed Boon', '1992-08-10');  	
 
 select Title, body, likes from Reviews; 
