@@ -138,11 +138,15 @@ for x in myresult:
 
     </form>
 
+<?php
+$hostName = "127.0.0.1";
+$userName = "root";
+$password = "";
+$databaseName = "GameLibrary";
+ $conn = new mysqli($hostName, $userName, $password, $databaseName);
 
 
-
-
-
+?>
 
 
 

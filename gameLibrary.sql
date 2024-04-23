@@ -24,8 +24,13 @@ Likes varchar(255),
 ReviewID int,
 userid int
 );
+create table Users(
+Username varchar(255),
+Email varchar(255),
+new_password varchar(255)
+);
 insert into Games (title, genre, publisher, developer, release_date) Values  ('Mortal Kombat', 'Fighting', 'NetherRelm Studios', 'Ed Boon', '1992-08-10');  	
 
 select Title, body, likes from Reviews; 
-
+select Username, email from users;
 
