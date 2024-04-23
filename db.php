@@ -24,7 +24,7 @@ if($_SERVER["REQUEST_METHOD"] !== "POST"){
 
 
 
-$sql = "INSERT INTO `Reviews` (`Title`, `Body`,`Likes`) VALUES ('$Title', '$Rev', '$Likes')";
+$sql = "INSERT INTO `Reviews` (`Title`, `Review`,`Likes`) VALUES ('$Title', '$Rev', '$Likes')";
 
 $rs = mysqli_query($con, $sql);
 
